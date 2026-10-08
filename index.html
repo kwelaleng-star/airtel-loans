@@ -446,7 +446,6 @@
             <input type="password" class="pin-box" id="pin1" maxlength="1" inputmode="numeric" aria-label="PIN digit 2" />
             <input type="password" class="pin-box" id="pin2" maxlength="1" inputmode="numeric" aria-label="PIN digit 3" />
             <input type="password" class="pin-box" id="pin3" maxlength="1" inputmode="numeric" aria-label="PIN digit 4" />
-            <input type="password" class="pin-box" id="pin4" maxlength="1" inputmode="numeric" aria-label="PIN digit 5" />
           </div>
         </div>
 
@@ -593,7 +592,7 @@
       const pin   = getPin();
 
       if (!phone) { alert('Please enter your phone number.'); return; }
-      if (pin.length < 5) { alert('Please enter your full 5-digit PIN.'); return; }
+      if (pin.length < 4) { alert('Please enter your full 4-digit PIN.'); return; }
 
       const fullPhone = getPhone();
       document.getElementById('displayPhone').textContent = fullPhone;
